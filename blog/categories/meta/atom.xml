@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Meta | SaGuN's Blog]]></title>
+  <link href="http://sagunms.github.io/blog/categories/meta/atom.xml" rel="self"/>
+  <link href="http://sagunms.github.io/"/>
+  <updated>2015-05-18T14:02:39+10:00</updated>
+  <id>http://sagunms.github.io/</id>
+  <author>
+    <name><![CDATA[Sagun Man Singh Shrestha]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Plugins Part 1]]></title>
+    <link href="http://sagunms.github.io/2015/05/18/plugins-part-1/"/>
+    <updated>2015-05-18T00:00:11+10:00</updated>
+    <id>http://sagunms.github.io/2015/05/18/plugins-part-1</id>
+    <content type="html"><![CDATA[<p>Here are some of the multimedia plugins available.</p>
+
+<p>Video:
+    <video width='640' height='360' preload='metadata' controls poster='http://camendesign.com/code/video_for_everybody/poster.jpg">http://camendesign.com/code/video_for_everybody/poster.jpg</a>'><source src='http://techslides.com/demos/sample-videos/small.webm">http://techslides.com/demos/sample-videos/small.webm</a>' ></video></p>
+
+<p><blockquote><p>Life is either a great adventure or nothing.</p><footer><strong>Helen Keller <a href="http://www.brainyquote.com/quotes/topics/topic_great.html#ET12XGusZSsVOxDp.99">http://www.brainyquote.com/quotes/topics/topic_great.html#ET12XGusZSsVOxDp.99</a> Brainy Quotes</strong></footer></blockquote></p>
+
+<!-- more -->
+
+
+<p>Images:
+    <img class="<a" src="href="http://wcours.gel.ulaval.ca/2013/h/GIF4101/default/6travaux/lena.png">http://wcours.gel.ulaval.ca/2013/h/GIF4101/default/6travaux/lena.png</a>" title="Lena Image" ></p>
+]]></content>
+  </entry>
+  
+</feed>

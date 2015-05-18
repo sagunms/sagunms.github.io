@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Projects | SaGuN's Blog]]></title>
+  <link href="http://sagunms.github.io/blog/categories/projects/atom.xml" rel="self"/>
+  <link href="http://sagunms.github.io/"/>
+  <updated>2015-05-18T14:02:39+10:00</updated>
+  <id>http://sagunms.github.io/</id>
+  <author>
+    <name><![CDATA[Sagun Man Singh Shrestha]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tilt Sensing With MMA7260Q 3-axis Accelerometer and ATmega32 Microcontroller]]></title>
+    <link href="http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller/"/>
+    <updated>2010-10-01T23:04:49+10:00</updated>
+    <id>http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller</id>
+    <content type="html"><![CDATA[<p>I had previously built an accelerometer controlled robot and so here’s the sufficiently commented code for it.  This project was done in CodeVisionAVR however, it can easily be done in AVRGCC. In this project, when the ATmega32 starts, it auto-calibrates, the accelerometer center position as the orientation you had at the beginning. On tiling the accelerometer board, you can move the robot front, back, left, right or stop. very simple! the outputs are driven to both L293B h-bridge as well as 16×2 LCD. Actually the total project i’m doing is a far complex one so this is just an accelerometer implementation in Mega32.</p>
+
+<!--more-->
+
+
+<pre><code class="c CodeVisionAVR C code http://github.com/sagunms View in Github">//Freescale MMA7260Q 3-Axis Accelerometer ported to ATmega32 microcontroller
+//Started on: Thursday, May 6, 2010
+//Update: LCD interface at PortC [Started: Friday, May 7, 2010; 7:00 PM]
+
+#include &lt;mega32.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+#asm(“.equ __lcd_port=0×15″)
+#include &lt; lcd.h&gt;
+
+#define LCDwidth 16
+char lcd_buffer[17];
+char adc_itoa[7];
+
+unsigned short oldADCpin, ADCpin;
+unsigned int ADCtemp;
+unsigned int ADCarray[3];
+unsigned int xyzOrigin[3];
+char xyzSpeed[3];
+
+unsigned char xyzsampledflag;
+unsigned char avgOrgflag;
+unsigned char xyzResult;
+
+void initialize(void);
+void displayOrientation(char val, unsigned char axis);
+
+void main(void) {
+
+    initialize();
+
+    for (;;) { // main loop
+        if ((ADCSRA &amp; (1&lt; 2) { //if all x,y,z values are sampled, return to the first x value
+            ADCpin = 0;
+            xyzsampledflag = 1;
+        }
+
+        ADMUX = (1&lt;&lt;5)|(5 – ADCpin);
+        ADCSRA |= (1&lt;&lt;6); // Start new ADC conversion
+        ADCarray[oldADCpin] = ADCtemp;
+        oldADCpin = ADCpin;
+        if(xyzsampledflag == 1) { //Print only after sampling of all 3 values x,y,z are complete and put in array
+            if(avgOrgflag xyzOrigin[0]) {
+                xyzSpeed[0] = xyzResult – xyzOrigin[0] ;
+            }
+            else {
+                xyzSpeed[0] = xyzOrigin[0] – xyzResult ;
+                xyzSpeed[0] |= 0×80; // set to negative number
+            }
+            //printf(“\nX=%d”,xyzSpeed[0]);
+            //
+            xyzResult = ADCarray[1]; // read Y
+            if(xyzResult &gt; xyzOrigin[1]) {
+                xyzSpeed[1] = xyzResult – xyzOrigin[1];
+            }
+
+            else{
+                xyzSpeed[1] = xyzOrigin[1] – xyzResult;
+                xyzSpeed[1] |= 0×80;
+            }
+            //printf(“\nY=%d”,xyzSpeed[1]);
+            //
+            xyzResult = ADCarray[2]; // read Z
+            if(xyzResult &gt; xyzOrigin[2]){
+                xyzSpeed[2] = xyzResult – xyzOrigin[2];
+            }
+
+            else{
+                xyzSpeed[2] = xyzOrigin[2] – xyzResult;
+                xyzSpeed[2] |= 0×80;
+            }
+            //printf(“\nZ=%d”,xyzSpeed[2]);
+            printf(“\tSpeed [%d,%d,%d]“,xyzSpeed[0],xyzSpeed[1],xyzSpeed[2]);
+        }
+
+        printf(“\r\n[%d,%d,%d]“,ADCarray[0],ADCarray[1],ADCarray[2]);
+        xyzsampledflag = 0;
+
+        displayOrientation(xyzSpeed[0], 0);
+        displayOrientation(xyzSpeed[1], 1);
+
+    }
+}
+
+void initialize() {
+    UCSRB = 0×18 ; // UART to setup TX and Rx
+    UBRRL = 103 ; // Baud Rate for mega32.
+
+    ADCpin = 0; // X, Y, Z: 0, 1, 2
+    oldADCpin = 0;
+    xyzsampledflag = 0;
+    avgOrgflag = 0;
+    xyzOrigin[0] = 0;
+    xyzOrigin[1] = 0;
+    xyzOrigin[2] = 0;
+
+    xyzSpeed[0] = 0;
+    xyzSpeed[1] = 0;
+    xyzSpeed[2] = 0;
+
+    //ADC pin 3-5
+    ADMUX = (1&lt; 10 ) { //PORTB = 0×0C;
+        if(axis == 1) {
+            lcd_gotoxy(0,1);
+            lcd_putsf(“FRONT”);
+        }
+        if(axis == 0) {
+            lcd_gotoxy(0,1);
+            lcd_putsf(“LEFT “);
+        }
+    }
+    /*
+    else { //PORTB = 0×08;
+    lcd_gotoxy(0,1);
+    lcd_putsf(“STOP “);
+    }
+    */
+    }
+    else if(val) { // if negative
+        val = val &amp; 0×7F;
+        // print on le left
+        if( val &gt; 10 ) { //PORTB = 0×30;
+            if(axis == 1) {
+                lcd_gotoxy(0,1);
+                lcd_putsf(“BACK “);
+            }
+            if(axis == 0) {
+                lcd_gotoxy(0,1);
+                lcd_putsf(“RIGHT”);
+            }
+        }
+        else { //PORTB = 0×10;
+            lcd_gotoxy(0,1);
+            lcd_putsf(“STOP “);
+        }
+
+    }
+    //else PORTB = 0; // if zeros
+    else {
+        lcd_gotoxy(0,1);
+        lcd_putsf(“STOP “);
+    }
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

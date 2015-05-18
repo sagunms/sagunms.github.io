@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Test | SaGuN's Blog]]></title>
+  <link href="http://sagunms.github.io/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://sagunms.github.io/"/>
+  <updated>2015-05-18T14:02:39+10:00</updated>
+  <id>http://sagunms.github.io/</id>
+  <author>
+    <name><![CDATA[Sagun Man Singh Shrestha]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Code Plugins]]></title>
+    <link href="http://sagunms.github.io/2015/05/17/code-plugins/"/>
+    <updated>2015-05-17T23:04:49+10:00</updated>
+    <id>http://sagunms.github.io/2015/05/17/code-plugins</id>
+    <content type="html"><![CDATA[<p>Here are the plugins for dealing with code.</p>
+
+<!-- more -->
+
+
+<p>Markdown:</p>
+
+<pre><code>var blogFramework = "Octopress";
+</code></pre>
+
+<p>Backtick method:</p>
+
+<pre><code class="js With Syntax Highlighting http://github.com/sagunms View in Github">var blogFramework = "Octopress";
+// A sample function to output bold
+var makeStrongFunc = function(str) {
+    if(typeof str === "undefined") str = "nothing";
+    return "&lt;strong&gt;" + str + "&lt;/strong&gt;";
+}
+</code></pre>
+
+<p><figure class='code'><figcaption><span>Codeblock Method <a href="http://github.com/sagunms">http://github.com/sagunms</a> Github </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">blogFramework</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Octopress</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
+</span><span class='line'><span class="c1">// A sample function to output bold</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">makeStrongFunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">str</span> <span class="o">===</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="kc">undefined</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;)</span> <span class="nx">str</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">nothing</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;;</span>
+</span><span class='line'>    <span class="k">return</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="nx">strong</span><span class="o">&gt;&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="o">&lt;</span><span class="err">/strong&gt;&amp;rdquo;;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Include Code:</p>
+
+<p><figure class='code'><figcaption><span>Fibonacci Sequence  (fib.js)</span> <a href='/downloads/code/fib.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// Start Fibonacci Generator function</span>
+</span><span class='line'><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>	<span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>	<span class="p">}</span>
+</span><span class='line'>	<span class="k">return</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="c1">// End Fibonacci Generator function</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Gist:</p>
+
+<p><div><script src='https://gist.github.com/9300036.js'></script>
+<noscript><pre><code>&lt;?php
+// Purpose: The edX AMR course textbook had extra large side buttons which was annoying.
+// Note: Create a directory ./book before running PHP script.
+$cnt = 1;
+while($cnt &lt; 474) {
+   $num_page = sprintf(&quot;%03d&quot;, $cnt++);
+   grab_image(&quot;https://s3.amazonaws.com/edx-textbooks/Siegwart--Autonomous+Mobile+Robots/p&quot;.$num_page.&quot;.png&quot;, &quot;./book/p&quot;.$num_page.&quot;.png&quot;);
+}
+
+function grab_image($url,$saveto){
+    $ch = curl_init ($url);
+    curl_setopt($ch, CURLOPT_HEADER, 0); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1); 
+    $raw = curl_exec($ch);
+    curl_close ($ch);
+    if(file_exists($saveto)) unlink($saveto);
+    $fp = fopen($saveto, &#39;x&#39;);
+    fwrite($fp, $raw);
+    fclose($fp);
+}
+?&gt;</code></pre></noscript></div>
+</p>
+
+<p>JSFiddle</p>
+
+<p><iframe style="width: 100%; height: 300px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/fNPvf/embedded/js,html/presentation/"></iframe></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tilt Sensing With MMA7260Q 3-axis Accelerometer and ATmega32 Microcontroller]]></title>
+    <link href="http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller/"/>
+    <updated>2010-10-01T23:04:49+10:00</updated>
+    <id>http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller</id>
+    <content type="html"><![CDATA[<p>I had previously built an accelerometer controlled robot and so here’s the sufficiently commented code for it.  This project was done in CodeVisionAVR however, it can easily be done in AVRGCC. In this project, when the ATmega32 starts, it auto-calibrates, the accelerometer center position as the orientation you had at the beginning. On tiling the accelerometer board, you can move the robot front, back, left, right or stop. very simple! the outputs are driven to both L293B h-bridge as well as 16×2 LCD. Actually the total project i’m doing is a far complex one so this is just an accelerometer implementation in Mega32.</p>
+
+<!--more-->
+
+
+<pre><code class="c CodeVisionAVR C code http://github.com/sagunms View in Github">//Freescale MMA7260Q 3-Axis Accelerometer ported to ATmega32 microcontroller
+//Started on: Thursday, May 6, 2010
+//Update: LCD interface at PortC [Started: Friday, May 7, 2010; 7:00 PM]
+
+#include &lt;mega32.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+#asm(“.equ __lcd_port=0×15″)
+#include &lt; lcd.h&gt;
+
+#define LCDwidth 16
+char lcd_buffer[17];
+char adc_itoa[7];
+
+unsigned short oldADCpin, ADCpin;
+unsigned int ADCtemp;
+unsigned int ADCarray[3];
+unsigned int xyzOrigin[3];
+char xyzSpeed[3];
+
+unsigned char xyzsampledflag;
+unsigned char avgOrgflag;
+unsigned char xyzResult;
+
+void initialize(void);
+void displayOrientation(char val, unsigned char axis);
+
+void main(void) {
+
+    initialize();
+
+    for (;;) { // main loop
+        if ((ADCSRA &amp; (1&lt; 2) { //if all x,y,z values are sampled, return to the first x value
+            ADCpin = 0;
+            xyzsampledflag = 1;
+        }
+
+        ADMUX = (1&lt;&lt;5)|(5 – ADCpin);
+        ADCSRA |= (1&lt;&lt;6); // Start new ADC conversion
+        ADCarray[oldADCpin] = ADCtemp;
+        oldADCpin = ADCpin;
+        if(xyzsampledflag == 1) { //Print only after sampling of all 3 values x,y,z are complete and put in array
+            if(avgOrgflag xyzOrigin[0]) {
+                xyzSpeed[0] = xyzResult – xyzOrigin[0] ;
+            }
+            else {
+                xyzSpeed[0] = xyzOrigin[0] – xyzResult ;
+                xyzSpeed[0] |= 0×80; // set to negative number
+            }
+            //printf(“\nX=%d”,xyzSpeed[0]);
+            //
+            xyzResult = ADCarray[1]; // read Y
+            if(xyzResult &gt; xyzOrigin[1]) {
+                xyzSpeed[1] = xyzResult – xyzOrigin[1];
+            }
+
+            else{
+                xyzSpeed[1] = xyzOrigin[1] – xyzResult;
+                xyzSpeed[1] |= 0×80;
+            }
+            //printf(“\nY=%d”,xyzSpeed[1]);
+            //
+            xyzResult = ADCarray[2]; // read Z
+            if(xyzResult &gt; xyzOrigin[2]){
+                xyzSpeed[2] = xyzResult – xyzOrigin[2];
+            }
+
+            else{
+                xyzSpeed[2] = xyzOrigin[2] – xyzResult;
+                xyzSpeed[2] |= 0×80;
+            }
+            //printf(“\nZ=%d”,xyzSpeed[2]);
+            printf(“\tSpeed [%d,%d,%d]“,xyzSpeed[0],xyzSpeed[1],xyzSpeed[2]);
+        }
+
+        printf(“\r\n[%d,%d,%d]“,ADCarray[0],ADCarray[1],ADCarray[2]);
+        xyzsampledflag = 0;
+
+        displayOrientation(xyzSpeed[0], 0);
+        displayOrientation(xyzSpeed[1], 1);
+
+    }
+}
+
+void initialize() {
+    UCSRB = 0×18 ; // UART to setup TX and Rx
+    UBRRL = 103 ; // Baud Rate for mega32.
+
+    ADCpin = 0; // X, Y, Z: 0, 1, 2
+    oldADCpin = 0;
+    xyzsampledflag = 0;
+    avgOrgflag = 0;
+    xyzOrigin[0] = 0;
+    xyzOrigin[1] = 0;
+    xyzOrigin[2] = 0;
+
+    xyzSpeed[0] = 0;
+    xyzSpeed[1] = 0;
+    xyzSpeed[2] = 0;
+
+    //ADC pin 3-5
+    ADMUX = (1&lt; 10 ) { //PORTB = 0×0C;
+        if(axis == 1) {
+            lcd_gotoxy(0,1);
+            lcd_putsf(“FRONT”);
+        }
+        if(axis == 0) {
+            lcd_gotoxy(0,1);
+            lcd_putsf(“LEFT “);
+        }
+    }
+    /*
+    else { //PORTB = 0×08;
+    lcd_gotoxy(0,1);
+    lcd_putsf(“STOP “);
+    }
+    */
+    }
+    else if(val) { // if negative
+        val = val &amp; 0×7F;
+        // print on le left
+        if( val &gt; 10 ) { //PORTB = 0×30;
+            if(axis == 1) {
+                lcd_gotoxy(0,1);
+                lcd_putsf(“BACK “);
+            }
+            if(axis == 0) {
+                lcd_gotoxy(0,1);
+                lcd_putsf(“RIGHT”);
+            }
+        }
+        else { //PORTB = 0×10;
+            lcd_gotoxy(0,1);
+            lcd_putsf(“STOP “);
+        }
+
+    }
+    //else PORTB = 0; // if zeros
+    else {
+        lcd_gotoxy(0,1);
+        lcd_putsf(“STOP “);
+    }
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

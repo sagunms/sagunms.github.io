@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[SaGuN's Blog]]></title>
+  <link href="http://sagunms.github.io/atom.xml" rel="self"/>
+  <link href="http://sagunms.github.io/"/>
+  <updated>2015-05-18T14:02:39+10:00</updated>
+  <id>http://sagunms.github.io/</id>
+  <author>
+    <name><![CDATA[Sagun Man Singh Shrestha]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Plugins Part 1]]></title>
+    <link href="http://sagunms.github.io/2015/05/18/plugins-part-1/"/>
+    <updated>2015-05-18T00:00:11+10:00</updated>
+    <id>http://sagunms.github.io/2015/05/18/plugins-part-1</id>
+    <content type="html"><![CDATA[<p>Here are some of the multimedia plugins available.</p>
+
+<p>Video:
+    <video width='640' height='360' preload='metadata' controls poster='http://camendesign.com/code/video_for_everybody/poster.jpg'><source src='http://techslides.com/demos/sample-videos/small.webm' type='video/webm; codecs=vp8, vorbis'></video></p>
+
+<blockquote><p>Life is either a great adventure or nothing.</p><footer><strong>Helen Keller</strong> <cite><a href='http://www.brainyquote.com/quotes/topics/topic_great.html#ET12XGusZSsVOxDp.99'>Brainy Quotes</a></cite></footer></blockquote>
+
+
+
+
+<!-- more -->
+
+
+<p>Images:
+    <img src="http://wcours.gel.ulaval.ca/2013/h/GIF4101/default/6travaux/lena.png" title="Lena Image" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Code Plugins]]></title>
+    <link href="http://sagunms.github.io/2015/05/17/code-plugins/"/>
+    <updated>2015-05-17T23:04:49+10:00</updated>
+    <id>http://sagunms.github.io/2015/05/17/code-plugins</id>
+    <content type="html"><![CDATA[<p>Here are the plugins for dealing with code.</p>
+
+<!-- more -->
+
+
+<p>Markdown:</p>
+
+<pre><code>var blogFramework = "Octopress";
+</code></pre>
+
+<p>Backtick method:</p>
+
+<figure class='code'><figcaption><span>With Syntax Highlighting</span><a href='http://github.com/sagunms'>View in Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">blogFramework</span> <span class="o">=</span> <span class="s2">&quot;Octopress&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="c1">// A sample function to output bold</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">makeStrongFunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">str</span> <span class="o">===</span> <span class="s2">&quot;undefined&quot;</span><span class="p">)</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;nothing&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">return</span> <span class="s2">&quot;&lt;strong&gt;&quot;</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="s2">&quot;&lt;/strong&gt;&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Codeblock Method</span><a href='http://github.com/sagunms'>Github </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">blogFramework</span> <span class="o">=</span> <span class="s2">&quot;Octopress&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="c1">// A sample function to output bold</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">makeStrongFunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">str</span> <span class="o">===</span> <span class="s2">&quot;undefined&quot;</span><span class="p">)</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;nothing&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">return</span> <span class="s2">&quot;&lt;strong&gt;&quot;</span> <span class="o">+</span> <span class="nx">str</span> <span class="o">+</span> <span class="s2">&quot;&lt;/strong&gt;&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Include Code:</p>
+
+<figure class='code'><figcaption><span>Fibonacci Sequence  (fib.js)</span> <a href='http://sagunms.github.io/downloads/code/fib.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// Start Fibonacci Generator function</span>
+</span><span class='line'><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="c1">// End Fibonacci Generator function</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Gist:</p>
+
+<div><script src='https://gist.github.com/9300036.js'></script>
+<noscript><pre><code>&lt;?php
+// Purpose: The edX AMR course textbook had extra large side buttons which was annoying.
+// Note: Create a directory ./book before running PHP script.
+$cnt = 1;
+while($cnt &lt; 474) {
+   $num_page = sprintf(&quot;%03d&quot;, $cnt++);
+   grab_image(&quot;https://s3.amazonaws.com/edx-textbooks/Siegwart--Autonomous+Mobile+Robots/p&quot;.$num_page.&quot;.png&quot;, &quot;./book/p&quot;.$num_page.&quot;.png&quot;);
+}
+
+function grab_image($url,$saveto){
+    $ch = curl_init ($url);
+    curl_setopt($ch, CURLOPT_HEADER, 0); 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+    curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1); 
+    $raw = curl_exec($ch);
+    curl_close ($ch);
+    if(file_exists($saveto)) unlink($saveto);
+    $fp = fopen($saveto, &#39;x&#39;);
+    fwrite($fp, $raw);
+    fclose($fp);
+}
+?&gt;</code></pre></noscript></div>
+
+
+<p>JSFiddle</p>
+
+<iframe style="width: 100%; height: 300px" frameborder="0" seamless="seamless" src="http://jsfiddle.net/fNPvf/embedded/js,html/presentation/"></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://sagunms.github.io/2015/05/17/hello-world/"/>
+    <updated>2015-05-17T20:17:35+10:00</updated>
+    <id>http://sagunms.github.io/2015/05/17/hello-world</id>
+    <content type="html"><![CDATA[<p>This is my first post. I am using the Octopress blogging framework. It is actually very easy to use.</p>
+
+<p>If you&rsquo;re just starting out, I would recommend you to check out this video tutorial: <a href="https://www.youtube.com/playlist?list=PLdPkwYpmtuJ7H6868D-5OANMUTpWSVJjc">Diving into Octopress by Andrew Burgess</a>.</p>
+
+<h2>Here is a test list:</h2>
+
+<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tilt Sensing With MMA7260Q 3-axis Accelerometer and ATmega32 Microcontroller]]></title>
+    <link href="http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller/"/>
+    <updated>2010-10-01T23:04:49+10:00</updated>
+    <id>http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller</id>
+    <content type="html"><![CDATA[<p>I had previously built an accelerometer controlled robot and so here’s the sufficiently commented code for it.  This project was done in CodeVisionAVR however, it can easily be done in AVRGCC. In this project, when the ATmega32 starts, it auto-calibrates, the accelerometer center position as the orientation you had at the beginning. On tiling the accelerometer board, you can move the robot front, back, left, right or stop. very simple! the outputs are driven to both L293B h-bridge as well as 16×2 LCD. Actually the total project i’m doing is a far complex one so this is just an accelerometer implementation in Mega32.</p>
+
+<!--more-->
+
+
+
+
+<figure class='code'><figcaption><span>CodeVisionAVR C code</span><a href='http://github.com/sagunms'>View in Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+</pre></td><td class='code'><pre><code class='c'><span class='line'><span class="c1">//Freescale MMA7260Q 3-Axis Accelerometer ported to ATmega32 microcontroller</span>
+</span><span class='line'><span class="c1">//Started on: Thursday, May 6, 2010</span>
+</span><span class='line'><span class="c1">//Update: LCD interface at PortC [Started: Friday, May 7, 2010; 7:00 PM]</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#include &lt;mega32.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#asm(“.equ __lcd_port=0×15″)</span>
+</span><span class='line'><span class="cp">#include &lt; lcd.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define LCDwidth 16</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">lcd_buffer</span><span class="p">[</span><span class="mi">17</span><span class="p">];</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">adc_itoa</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">oldADCpin</span><span class="p">,</span> <span class="n">ADCpin</span><span class="p">;</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ADCtemp</span><span class="p">;</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ADCarray</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+</span><span class='line'><span class="kt">char</span> <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">xyzsampledflag</span><span class="p">;</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">avgOrgflag</span><span class="p">;</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">xyzResult</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">initialize</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">displayOrientation</span><span class="p">(</span><span class="kt">char</span> <span class="n">val</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">axis</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">initialize</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span> <span class="c1">// main loop</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">((</span><span class="n">ADCSRA</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//if all x,y,z values are sampled, return to the first x value</span>
+</span><span class='line'>            <span class="n">ADCpin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="n">xyzsampledflag</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">ADMUX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">5</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="mi">5</span> <span class="err">–</span> <span class="n">ADCpin</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">ADCSRA</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">6</span><span class="p">);</span> <span class="c1">// Start new ADC conversion</span>
+</span><span class='line'>        <span class="n">ADCarray</span><span class="p">[</span><span class="n">oldADCpin</span><span class="p">]</span> <span class="o">=</span> <span class="n">ADCtemp</span><span class="p">;</span>
+</span><span class='line'>        <span class="n">oldADCpin</span> <span class="o">=</span> <span class="n">ADCpin</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="n">xyzsampledflag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//Print only after sampling of all 3 values x,y,z are complete and put in array</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">avgOrgflag</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzResult</span> <span class="err">–</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="err">–</span> <span class="n">xyzResult</span> <span class="p">;</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">|=</span> <span class="mi">0</span><span class="err">×</span><span class="mi">80</span><span class="p">;</span> <span class="c1">// set to negative number</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="c1">//printf(“\nX=%d”,xyzSpeed[0]);</span>
+</span><span class='line'>            <span class="c1">//</span>
+</span><span class='line'>            <span class="n">xyzResult</span> <span class="o">=</span> <span class="n">ADCarray</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span> <span class="c1">// read Y</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">xyzResult</span> <span class="o">&gt;</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzResult</span> <span class="err">–</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="k">else</span><span class="p">{</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="err">–</span> <span class="n">xyzResult</span><span class="p">;</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">|=</span> <span class="mi">0</span><span class="err">×</span><span class="mi">80</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="c1">//printf(“\nY=%d”,xyzSpeed[1]);</span>
+</span><span class='line'>            <span class="c1">//</span>
+</span><span class='line'>            <span class="n">xyzResult</span> <span class="o">=</span> <span class="n">ADCarray</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span> <span class="c1">// read Z</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">xyzResult</span> <span class="o">&gt;</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">2</span><span class="p">]){</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzResult</span> <span class="err">–</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="k">else</span><span class="p">{</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="err">–</span> <span class="n">xyzResult</span><span class="p">;</span>
+</span><span class='line'>                <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">|=</span> <span class="mi">0</span><span class="err">×</span><span class="mi">80</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="c1">//printf(“\nZ=%d”,xyzSpeed[2]);</span>
+</span><span class='line'>            <span class="n">printf</span><span class="p">(</span><span class="err">“\</span><span class="n">tSpeed</span> <span class="p">[</span><span class="o">%</span><span class="n">d</span><span class="p">,</span><span class="o">%</span><span class="n">d</span><span class="p">,</span><span class="o">%</span><span class="n">d</span><span class="p">]</span><span class="err">“</span><span class="p">,</span><span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">printf</span><span class="p">(</span><span class="err">“\</span><span class="n">r</span><span class="err">\</span><span class="n">n</span><span class="p">[</span><span class="o">%</span><span class="n">d</span><span class="p">,</span><span class="o">%</span><span class="n">d</span><span class="p">,</span><span class="o">%</span><span class="n">d</span><span class="p">]</span><span class="err">“</span><span class="p">,</span><span class="n">ADCarray</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">ADCarray</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">ADCarray</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+</span><span class='line'>        <span class="n">xyzsampledflag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">displayOrientation</span><span class="p">(</span><span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">displayOrientation</span><span class="p">(</span><span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">void</span> <span class="nf">initialize</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">UCSRB</span> <span class="o">=</span> <span class="mi">0</span><span class="err">×</span><span class="mi">18</span> <span class="p">;</span> <span class="c1">// UART to setup TX and Rx</span>
+</span><span class='line'>    <span class="n">UBRRL</span> <span class="o">=</span> <span class="mi">103</span> <span class="p">;</span> <span class="c1">// Baud Rate for mega32.</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">ADCpin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// X, Y, Z: 0, 1, 2</span>
+</span><span class='line'>    <span class="n">oldADCpin</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzsampledflag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">avgOrgflag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzOrigin</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">xyzSpeed</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">//ADC pin 3-5</span>
+</span><span class='line'>    <span class="n">ADMUX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;</span> <span class="mi">10</span> <span class="p">)</span> <span class="p">{</span> <span class="c1">//PORTB = 0×0C;</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="n">axis</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>            <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">FRONT</span><span class="err">”</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="n">axis</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>            <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">LEFT</span> <span class="err">“</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="cm">/*</span>
+</span><span class='line'><span class="cm">    else { //PORTB = 0×08;</span>
+</span><span class='line'><span class="cm">    lcd_gotoxy(0,1);</span>
+</span><span class='line'><span class="cm">    lcd_putsf(“STOP “);</span>
+</span><span class='line'><span class="cm">    }</span>
+</span><span class='line'><span class="cm">    */</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// if negative</span>
+</span><span class='line'>        <span class="n">val</span> <span class="o">=</span> <span class="n">val</span> <span class="o">&amp;</span> <span class="mi">0</span><span class="err">×</span><span class="mf">7F</span><span class="p">;</span>
+</span><span class='line'>        <span class="c1">// print on le left</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">)</span> <span class="p">{</span> <span class="c1">//PORTB = 0×30;</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">axis</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>                <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">BACK</span> <span class="err">“</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="k">if</span><span class="p">(</span><span class="n">axis</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>                <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">RIGHT</span><span class="err">”</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">else</span> <span class="p">{</span> <span class="c1">//PORTB = 0×10;</span>
+</span><span class='line'>            <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>            <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">STOP</span> <span class="err">“</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="c1">//else PORTB = 0; // if zeros</span>
+</span><span class='line'>    <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">lcd_gotoxy</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">lcd_putsf</span><span class="p">(</span><span class="err">“</span><span class="n">STOP</span> <span class="err">“</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
