@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Projects | SaGuN's Blog]]></title>
-  <link href="http://sagunms.github.io/blog/categories/projects/atom.xml" rel="self"/>
+  <link href="http://sagunms.github.io/categories/projects/atom.xml" rel="self"/>
   <link href="http://sagunms.github.io/"/>
-  <updated>2015-05-18T14:10:11+10:00</updated>
+  <updated>2015-05-18T14:12:34+10:00</updated>
   <id>http://sagunms.github.io/</id>
   <author>
     <name><![CDATA[Sagun Man Singh Shrestha]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tilt Sensing With MMA7260Q 3-axis Accelerometer and ATmega32 Microcontroller]]></title>
-    <link href="http://sagunms.github.io/blog/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller/"/>
+    <link href="http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller/"/>
     <updated>2010-10-01T23:04:49+10:00</updated>
-    <id>http://sagunms.github.io/blog/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller</id>
+    <id>http://sagunms.github.io/2010/10/01/tilt-sensing-with-mma7260q-3-axis-accelerometer-and-atmega32-microcontroller</id>
     <content type="html"><![CDATA[<p>I had previously built an accelerometer controlled robot and so here’s the sufficiently commented code for it.  This project was done in CodeVisionAVR however, it can easily be done in AVRGCC. In this project, when the ATmega32 starts, it auto-calibrates, the accelerometer center position as the orientation you had at the beginning. On tiling the accelerometer board, you can move the robot front, back, left, right or stop. very simple! the outputs are driven to both L293B h-bridge as well as 16×2 LCD. Actually the total project i’m doing is a far complex one so this is just an accelerometer implementation in Mega32.</p>
 
 <!--more-->
