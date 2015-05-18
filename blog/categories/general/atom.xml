@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | SaGuN's Blog]]></title>
   <link href="http://sagunms.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://sagunms.github.io/"/>
-  <updated>2015-05-18T14:02:39+10:00</updated>
+  <updated>2015-05-18T14:10:11+10:00</updated>
   <id>http://sagunms.github.io/</id>
   <author>
     <name><![CDATA[Sagun Man Singh Shrestha]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://sagunms.github.io/2015/05/17/hello-world/"/>
+    <link href="http://sagunms.github.io/blog/2015/05/17/hello-world/"/>
     <updated>2015-05-17T20:17:35+10:00</updated>
-    <id>http://sagunms.github.io/2015/05/17/hello-world</id>
+    <id>http://sagunms.github.io/blog/2015/05/17/hello-world</id>
     <content type="html"><![CDATA[<p>This is my first post. I am using the Octopress blogging framework. It is actually very easy to use.</p>
 
 <p>If you&rsquo;re just starting out, I would recommend you to check out this video tutorial: <a href="https://www.youtube.com/playlist?list=PLdPkwYpmtuJ7H6868D-5OANMUTpWSVJjc">Diving into Octopress by Andrew Burgess</a>.</p>
